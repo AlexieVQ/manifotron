@@ -1,0 +1,134 @@
+# SYNTAXE
+
+origin: "#[#parties#][#ecosysteme#]slogan.capitalize#"
+
+slogan: "#[#verbe#]part1# #part2# #emoji1##emoji2#"
+
+# Première partie de la phrase
+part1:
+  - "#ve_sing#-moi #ve_prep_pa##pa_le##pa_def#"
+  - "#ve_plur# #ve_prep_pa#des #pa_plur#"
+
+# Deuxième partie de la phrase
+part2:
+  - "pas #ve_prep_es##es_le##es_def#"
+
+# Emoji lié aux parties génitales ou générique
+emoji1:
+  - "#pa_emoji#"
+  - "#emoji#"
+
+# Emoji lié à l'écosystème ou générique
+emoji2:
+  - "#es_emoji#"
+  - "#emoji#"
+
+# LEXIQUE
+
+# Verbes d'activités sexuelles.
+#
+# Clés définies :
+#   ve_sing : verbe à la deuxième personne du singulier à l'impératif
+#   ve_plur : verbe à la deuxième personne du pluriel à l'impératif
+#   ve_prep_pa : si le verbe doit être suivi d'une préposition de lieu, contient
+#     "#pa_prep# "
+#   ve_prep_es : si le verbe doit être suivi d'une préposition de lieu, contient
+#     "#es_prep# "
+verbe:
+  - "[ve_sing:asperge][ve_plur:aspergez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:baise][ve_plur:baisez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:bouffe][ve_plur:bouffez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:bourre][ve_plur:bourrez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:branle][ve_plur:branlez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:broute][ve_plur:broutez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:désintègre][ve_plur:désintégrez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:détruis][ve_plur:détruisez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:encule][ve_plur:enculez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:explose][ve_plur:explosez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:frappe][ve_plur:frappez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:lèche][ve_plur:léchez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:mange][ve_plur:mangez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:mords][ve_plur:mordez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:nique][ve_plur:niquez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:pète][ve_plur:pétez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:pète][ve_plur:pétez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
+  - "[ve_sing:pince][ve_plur:pincez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:réchauffe][ve_plur:réchauffez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:suce][ve_plur:sucez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:tabasse][ve_plur:tabassez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:touche][ve_plur:touchez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:troue][ve_plur:trouez][ve_prep_pa:][ve_prep_es:]"
+
+# Zones érogènes.
+#
+# Clés définies :
+#   pa_def : nom sous la forme par défaut
+#   pa_le : article défini de la forme par défaut, suivi d'une espace ou d'une
+#     apostrophe selon la première lettre du nom
+#   pa_plur : forme plurielle
+#   pa_prep : préposition de lieu compatible
+#   pa_emoji : émoji associé
+parties:
+  - "[pa_def:bite][pa_le:la ][pa_plur:bites][pa_prep:dans,sur][pa_emoji:🍆]"
+  - "[pa_def:boule][pa_le:le ][pa_plur:boules][pa_prep:sur][pa_emoji:🍑]"
+  - "[pa_def:boules][pa_le:les ][pa_plur:boules][pa_prep:sur][pa_emoji:🍒]"
+  - "[pa_def:chibre][pa_le:le ][pa_plur:chibres][pa_prep:dans,sur][pa_emoji:🍆]"
+  - "[pa_def:clit,clito][pa_le:le ][pa_plur:clitos][pa_prep:sur][pa_emoji:#emoji#]"
+  - "[pa_def:couilles][pa_le:les ][pa_plur:couilles][pa_prep:sur][pa_emoji:#emoji#]"
+  - "[pa_def:cul][pa_le:le ][pa_plur:culs][pa_prep:dans][pa_emoji:🍑]"
+  - "[pa_def:chatte][pa_le:la ][pa_plur:chattes][pa_prep:dans][pa_emoji:🐱,😼,😺,😻,😽]"
+  - "[pa_def:fesses][pa_le:les ][pa_plur:fesses][pa_prep:dans][pa_emoji:🍑]"
+  - "[pa_def:fion][pa_le:le ][pa_plur:fions][pa_prep:dans][pa_emoji:🍑]"
+  - "[pa_def:gland][pa_le:le ][pa_plur:glands][pa_prep:sur][pa_emoji:🌰]"
+  - "[pa_def:gougouttes][pa_le:les ][pa_plur:gougouttes][pa_prep:sur][pa_emoji:🍒]"
+  - "[pa_def:miches][pa_le:les ][pa_plur:miches][pa_prep:sur][pa_emoji:🫓]"
+  - "[pa_def:minou][pa_le:le ][pa_plur:minous][pa_prep:dans][pa_emoji:🐱,😼,😺,😻,😽]"
+  - "[pa_def:téton][pa_le:le ][pa_plur:tétons][pa_prep:sur][pa_emoji:🍒]"
+  - "[pa_def:tétons][pa_le:les ][pa_plur:tétons][pa_prep:sur][pa_emoji:🍒]"
+  - "[pa_def:teuch][pa_le:la ][pa_plur:teuches][pa_prep:dans][pa_emoji:#emoji#]"
+  - "[pa_def:pieds][pa_le:les ][pa_plur:pieds][pa_prep:sur][pa_emoji:🦶]"
+  - "[pa_def:poireau][pa_le:le ][pa_plur:poireaux][pa_prep:dans,sur][pa_emoji:🥬,🍆]"
+  - "[pa_def:seins][pa_le:les ][pa_plur:seins][pa_prep:sur][pa_emoji:🍒]"
+  - "[pa_def:tchoutches][pa_le:les ][pa_plur:tchoutches][pa_prep:sur][pa_emoji:🍒]"
+  - "[pa_def:teub][pa_le:la ][pa_plur:teubes][pa_prep:sur][pa_emoji:🍆]"
+
+# Écosystèmes ou autres concepts menacés par le réchauffement climatique.
+#
+# Clés définies :
+#   es_def : nom sous la forme par défaut
+#   es_le : article défini de la forme par défaut, suivi d'une espace ou d'une
+#     apostrophe selon la première lettre du nom
+#   es_prep : préposition de lieu compatible
+#   es_emoji : émoji associé
+ecosysteme:
+  - "[es_def:abeilles][es_le:les ][es_prep:sur][es_emoji:🐝]"
+  - "[es_def:animaux][es_le:les ][es_prep:sur][es_emoji:🐄,🐅,🐆,🐇,🐋,🐔,🐖,🐗,🐘,🐤,🐬,🐮,🐯,🐰,🐳,🐷,🐺,🐻,🐼,🦁]"
+  - "[es_def:arbres][es_le:les ][es_prep:sur][es_emoji:🌲,🌳]"
+  - "[es_def:atmosphère][es_le:l’][es_prep:dans][es_emoji:🌏,🌍,🌎]"
+  - "[es_def:bilan carbone][es_le:le ][es_prep:sur][es_emoji:🌡]"
+  - "[es_def:biodiversité][es_le:la ][es_prep:sur][es_emoji:🌱,🌻,🌾,🐝,🐞,🦋]"
+  - "[es_def:dauphins][es_le:les ][es_prep:sur][es_emoji:🐬]"
+  - "[es_def:climat][es_le:le ][es_prep:sur][es_emoji:⛈️,🌪️,🌩️,🔥,🌡]"
+  - "[es_def:couche d'ozone][es_le:la ][es_prep:sur][es_emoji:🌏,🌍,🌎]"
+  - "[es_def:forêt][es_le:la ][es_prep:dans][es_emoji:🌲,🌳]"
+  - "[es_def:forêt amazonienne][es_le:la ][es_prep:dans][es_emoji:🌲,🌳]"
+  - "[es_def:nature][es_le:la ][es_prep:dans][es_emoji:🌱,🌳,🌿,🍃]"
+  - "[es_def:planète][es_le:la ][es_prep:sur][es_emoji:🌏,🌍,🌎]"
+  - "[es_def:oiseaux][es_le:les ][es_prep:sur][es_emoji:🐦,🦜]"
+  - "[es_def:océan][es_le:l’][es_prep:dans][es_emoji:🌊]"
+  - "[es_def:océans][es_le:les ][es_prep:dans][es_emoji:🌊]"
+  - "[es_def:poissons][es_le:les ][es_prep:sur][es_emoji:🐟,🐠,🐡]"
+  - "[es_def:resources naturelles][es_le:les ][es_prep:dans][es_emoji:🪨,🪵]"
+  - "[es_def:espèces en voie d’extinction][es_le:les ][es_prep:sur][es_emoji:🐅,🐆,🐘,🐯,🐼,🦁]"
+
+# Émojis utilisables dans n'importe quel slogan.
+emoji:
+  - 🌏
+  - 🌍
+  - 🌎
+  - ⏳
+  - 🌡
+  - 🔥
+  - 🥵
+  - 💦
+  - 🔞
