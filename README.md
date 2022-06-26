@@ -25,3 +25,8 @@ make build
 ```
 
 Le chemin du fichier obtenu est `out/output.json`.
+
+## Démo
+
+La grammaire peut-être testée à la page
+https://cheapbotsdonequick.com/source/manifotron.
