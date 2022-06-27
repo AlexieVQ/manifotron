@@ -46,6 +46,8 @@ verbe:
   - "[ve_sing:encule][ve_plur:enculez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:explose][ve_plur:explosez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:frappe][ve_plur:frappez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:froute][ve_plur:froutez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
+  - "[ve_sing:gicle][ve_plur:giclez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
   - "[ve_sing:lèche][ve_plur:léchez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:mange][ve_plur:mangez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:mords][ve_plur:mordez][ve_prep_pa:][ve_prep_es:]"
@@ -54,6 +56,7 @@ verbe:
   - "[ve_sing:pète][ve_plur:pétez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
   - "[ve_sing:pince][ve_plur:pincez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:réchauffe][ve_plur:réchauffez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_sing:sperme][ve_plur:spermez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
   - "[ve_sing:suce][ve_plur:sucez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:tabasse][ve_plur:tabassez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:touche][ve_plur:touchez][ve_prep_pa:][ve_prep_es:]"
@@ -70,6 +73,7 @@ verbe:
 #   pa_emoji : émoji associé
 parties:
   - "[pa_def:bite][pa_le:la ][pa_plur:bites][pa_prep:dans,sur][pa_emoji:🍆]"
+  - "[pa_def:bouche][pa_le:la ][pa_plur:bouches][pa_prep:dans][pa_emoji:👄,🫦,🗢]"
   - "[pa_def:boule][pa_le:le ][pa_plur:boules][pa_prep:sur][pa_emoji:🍑]"
   - "[pa_def:boules][pa_le:les ][pa_plur:boules][pa_prep:sur][pa_emoji:🍒]"
   - "[pa_def:chibre][pa_le:le ][pa_plur:chibres][pa_prep:dans,sur][pa_emoji:🍆]"
@@ -88,6 +92,7 @@ parties:
   - "[pa_def:teuch][pa_le:la ][pa_plur:teuches][pa_prep:dans][pa_emoji:#emoji#]"
   - "[pa_def:pieds][pa_le:les ][pa_plur:pieds][pa_prep:sur][pa_emoji:🦶]"
   - "[pa_def:poireau][pa_le:le ][pa_plur:poireaux][pa_prep:dans,sur][pa_emoji:🥬,🍆]"
+  - "[pa_def:queue][pa_le:la ][pa_plur:queues][pa_prep:sur][pa_emoji:🍆]"
   - "[pa_def:seins][pa_le:les ][pa_plur:seins][pa_prep:sur][pa_emoji:🍒]"
   - "[pa_def:tchoutches][pa_le:les ][pa_plur:tchoutches][pa_prep:sur][pa_emoji:🍒]"
   - "[pa_def:teub][pa_le:la ][pa_plur:teubes][pa_prep:sur][pa_emoji:🍆]"
