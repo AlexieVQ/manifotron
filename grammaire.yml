@@ -7,6 +7,7 @@ slogan:
   - *slogan1
   - *slogan1
   - "#[#flatterie#]avance# #[#pa_flatterie#]sub_predateur# #emoji_pa##emoji_pr#"
+  - "#[#verbe#]avance# #[#flatterie#]sub_predateur_nv# #emoji_pa##emoji_pr#"
   - "#[#flatterie#][#pa_flatterie#]avance# #[pa_le:#ve_pa_pron# ][pa_def:]sub_predateur# #emoji_pa##emoji_pr#"
 
 # Première partie du slogan, avance sexuelle.
@@ -21,6 +22,10 @@ sub_ecosysteme:
 # Deuxième partie du slogan, "pas <les parties de prédateur>"
 sub_predateur:
   - "pas #pa_le##pa_def# #pr_de##pr_nom#"
+
+# Deuxième partie du slogan, "au lieu de <flatter prédateur>"
+sub_predateur_nv:
+  - "au lieu #ve_de##ve_inf# #ve_pa_le##ve_pa_def# #pr_de##pr_nom#"
 
 # Émoji lié aux parties intimes ou générique.
 emoji_pa:
@@ -50,43 +55,45 @@ pa_flatterie: "[pa_def:#ve_pa_def#][pa_le:#ve_pa_le#][pa_plur:#ve_pa_plur#][pa_p
 #   - les clés de parties, avec 've_' devant chaque clé,
 #   - ve_pa_pron, un pronom démonstratif pour les parties intimes.
 flatterie:
-  - &lecher "[ve_sing:lèche][ve_plur:léchez][ve_prep_pa:][ve_prep_es:][ve_pa_def:cul][ve_pa_le:le ][ve_pa_plur:culs][ve_pa_prep:dans][ve_pa_pron:celui][ve_pa_emoji:🍑]"
-  - &sucer "[ve_sing:suce][ve_plur:sucez][ve_prep_pa:][ve_prep_es:][ve_pa_def:bite][ve_pa_le:la ][ve_pa_plur:bites][ve_pa_prep:dans,sur][ve_pa_pron:celle][ve_pa_emoji:🍆]"
+  - &lecher "[ve_inf:lécher][ve_sing:lèche][ve_plur:léchez][ve_de:de ][ve_prep_pa:][ve_prep_es:][ve_pa_def:cul][ve_pa_le:le ][ve_pa_plur:culs][ve_pa_prep:dans][ve_pa_pron:celui][ve_pa_emoji:🍑]"
+  - &sucer "[ve_inf:sucer][ve_sing:suce][ve_plur:sucez][ve_de:de ][ve_prep_pa:][ve_prep_es:][ve_pa_def:bite][ve_pa_le:la ][ve_pa_plur:bites][ve_pa_prep:dans,sur][ve_pa_pron:celle][ve_pa_emoji:🍆]"
 
 # Verbes d'activités sexuelles.
 #
 # Clés définies :
+#   ve_inf : verbe à l'infinitif
 #   ve_sing : verbe à la deuxième personne du singulier à l'impératif
 #   ve_plur : verbe à la deuxième personne du pluriel à l'impératif
+#   ve_de : préposition "de", suivie d'une espace ou d'une apostrophe pour "d'"
 #   ve_prep_pa : si le verbe doit être suivi d'une préposition de lieu, contient
 #     "#pa_prep# "
 #   ve_prep_es : si le verbe doit être suivi d'une préposition de lieu, contient
 #     "#es_prep# "
 verbe:
-  - "[ve_sing:asperge][ve_plur:aspergez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:baise][ve_plur:baisez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:bouffe][ve_plur:bouffez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:bourre][ve_plur:bourrez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:branle][ve_plur:branlez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:broute][ve_plur:broutez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:désintègre][ve_plur:désintégrez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:détruis][ve_plur:détruisez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:encule][ve_plur:enculez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:explose][ve_plur:explosez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:frappe][ve_plur:frappez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:froute][ve_plur:froutez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
-  - "[ve_sing:gicle][ve_plur:giclez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
-  - "[ve_sing:mange][ve_plur:mangez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:mords][ve_plur:mordez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:nique][ve_plur:niquez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:pète][ve_plur:pétez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:pète][ve_plur:pétez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
-  - "[ve_sing:pince][ve_plur:pincez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:réchauffe][ve_plur:réchauffez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:sperme][ve_plur:spermez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
-  - "[ve_sing:tabasse][ve_plur:tabassez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:touche][ve_plur:touchez][ve_prep_pa:][ve_prep_es:]"
-  - "[ve_sing:troue][ve_plur:trouez][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:asperger][ve_sing:asperge][ve_plur:aspergez][ve_de:d’][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:baiser][ve_sing:baise][ve_plur:baisez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:bouffer][ve_sing:bouffe][ve_plur:bouffez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:bourrer][ve_sing:bourre][ve_plur:bourrez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:branler][ve_sing:branle][ve_plur:branlez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:brouter][ve_sing:broute][ve_plur:broutez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:désintégrer][ve_sing:désintègre][ve_plur:désintégrez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:détruire][ve_sing:détruis][ve_plur:détruisez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:enculer][ve_sing:encule][ve_plur:enculez][ve_de:d’][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:exploser][ve_sing:explose][ve_plur:explosez][ve_de:d’][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:frapper][ve_sing:frappe][ve_plur:frappez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:frouter][ve_sing:froute][ve_plur:froutez][ve_de:de ][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
+  - "[ve_inf:gicler][ve_sing:gicle][ve_plur:giclez][ve_de:de ][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
+  - "[ve_inf:manger][ve_sing:mange][ve_plur:mangez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:mordre][ve_sing:mords][ve_plur:mordez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:niquer][ve_sing:nique][ve_plur:niquez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:péter][ve_sing:pète][ve_plur:pétez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:péter][ve_sing:pète][ve_plur:pétez][ve_de:de ][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
+  - "[ve_inf:pincer][ve_sing:pince][ve_plur:pincez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:réchauffer][ve_sing:réchauffe][ve_plur:réchauffez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:spermer][ve_sing:sperme][ve_plur:spermez][ve_de:de ][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
+  - "[ve_inf:tabasser][ve_sing:tabasse][ve_plur:tabassez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:toucher][ve_sing:touche][ve_plur:touchez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:trouer][ve_sing:troue][ve_plur:trouez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
   - *lecher
   - *sucer
 
