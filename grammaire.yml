@@ -1,29 +1,57 @@
 # SYNTAXE
 
-origin: "#[#parties#][#ecosysteme#]slogan.capitalize#"
+origin: "#[#parties#][#ecosysteme#][#predateur#]slogan.capitalize#"
 
-slogan: "#[#verbe#]part1# #part2# #emoji1##emoji2#"
+slogan:
+  - &slogan1 "#[#verbe#]avance# #sub_ecosysteme# #emoji_pa##emoji_es#"
+  - *slogan1
+  - *slogan1
+  - "#[#flatterie#]avance# #[#pa_flatterie#]sub_predateur# #emoji_pa##emoji_pr#"
+  - "#[#flatterie#][#pa_flatterie#]avance# #[pa_le:#ve_pa_pron# ][pa_def:]sub_predateur# #emoji_pa##emoji_pr#"
 
-# Première partie de la phrase
-part1:
+# Première partie du slogan, avance sexuelle.
+avance:
   - "#ve_sing#-moi #ve_prep_pa##pa_le##pa_def#"
   - "#ve_plur# #ve_prep_pa#des #pa_plur#"
 
-# Deuxième partie de la phrase
-part2:
+# Deuxième partie du slogan, "pas <écosystème>".
+sub_ecosysteme:
   - "pas #ve_prep_es##es_le##es_def#"
 
-# Emoji lié aux parties génitales ou générique
-emoji1:
+# Deuxième partie du slogan, "pas <les parties de prédateur>"
+sub_predateur:
+  - "pas #pa_le##pa_def# #pr_de##pr_nom#"
+
+# Émoji lié aux parties intimes ou générique.
+emoji_pa:
   - "#pa_emoji#"
   - "#emoji#"
 
-# Emoji lié à l'écosystème ou générique
-emoji2:
+# Émoji lié à l'écosystème ou générique.
+emoji_es:
   - "#es_emoji#"
   - "#emoji#"
 
+# Émoji lié au prédateur ou générique.
+emoji_pr:
+  - "#pr_emoji#"
+  - "#emoji#"
+
+# Assigne les clés définies pour les parties associées à une flatterie aux clés
+# par défaut pour les parties intimes.
+pa_flatterie: "[pa_def:#ve_pa_def#][pa_le:#ve_pa_le#][pa_plur:#ve_pa_plur#][pa_prep:#ve_pa_prep#][pa_emoji:#ve_pa_emoji#]"
+
 # LEXIQUE
+
+# Verbe d'activités sexuelles pouvant s'apparenter à des flatteries.
+#
+# Les clés définies sont :
+#   - les clés de verbe,
+#   - les clés de parties, avec 've_' devant chaque clé,
+#   - ve_pa_pron, un pronom démonstratif pour les parties intimes.
+flatterie:
+  - &lecher "[ve_sing:lèche][ve_plur:léchez][ve_prep_pa:][ve_prep_es:][ve_pa_def:cul][ve_pa_le:le ][ve_pa_plur:culs][ve_pa_prep:dans][ve_pa_pron:celui][ve_pa_emoji:🍑]"
+  - &sucer "[ve_sing:suce][ve_plur:sucez][ve_prep_pa:][ve_prep_es:][ve_pa_def:bite][ve_pa_le:la ][ve_pa_plur:bites][ve_pa_prep:dans,sur][ve_pa_pron:celle][ve_pa_emoji:🍆]"
 
 # Verbes d'activités sexuelles.
 #
@@ -48,7 +76,6 @@ verbe:
   - "[ve_sing:frappe][ve_plur:frappez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:froute][ve_plur:froutez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
   - "[ve_sing:gicle][ve_plur:giclez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
-  - "[ve_sing:lèche][ve_plur:léchez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:mange][ve_plur:mangez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:mords][ve_plur:mordez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:nique][ve_plur:niquez][ve_prep_pa:][ve_prep_es:]"
@@ -57,10 +84,11 @@ verbe:
   - "[ve_sing:pince][ve_plur:pincez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:réchauffe][ve_plur:réchauffez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:sperme][ve_plur:spermez][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
-  - "[ve_sing:suce][ve_plur:sucez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:tabasse][ve_plur:tabassez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:touche][ve_plur:touchez][ve_prep_pa:][ve_prep_es:]"
   - "[ve_sing:troue][ve_plur:trouez][ve_prep_pa:][ve_prep_es:]"
+  - *lecher
+  - *sucer
 
 # Zones érogènes.
 #
@@ -125,6 +153,28 @@ ecosysteme:
   - "[es_def:poissons][es_le:les ][es_prep:sur][es_emoji:🐟,🐠,🐡]"
   - "[es_def:resources naturelles][es_le:les ][es_prep:dans][es_emoji:🪨,🪵]"
   - "[es_def:espèces en voie d’extinction][es_le:les ][es_prep:sur][es_emoji:🐅,🐆,🐘,🐯,🐼,🦁]"
+
+# Prédateurs pour l'environnement.
+#
+# Les clés définies sont :
+#   - pr_nom, le nom du prédateur,
+#   - pr_le, article défini suivi d'une espace ou d'une apostrophe (ou vide pour
+#     les noms propres),
+#   - pr_de, préposition 'de' suivie d'une espace ou d'une apostrophe,
+#   - pr_emoji, émoji compatible avec le prédateur.
+predateur:
+  - "[pr_nom:agro-industrie][pr_le:l’][pr_de:de l’][pr_emoji:🚜]"
+  - "[pr_nom:capitalisme][pr_le:le ][pr_de:du ][pr_emoji:💰,💸,🤑]"
+  - "[pr_nom:carnistes][pr_le:les ][pr_de:des ][pr_emoji:🥩]"
+  - "[pr_nom:chasseurs][pr_le:les ][pr_de:des ][pr_emoji:🦌,🐗,🐇]"
+  - "[pr_nom:élevages intensifs][pr_le:les ][pr_de:des ][pr_emoji:🐔,🐮,🐖]"
+  - "[pr_nom:grand patronat][pr_le:le ][pr_de:du ][pr_emoji:💼]"
+  - "[pr_nom:grands patrons][pr_le:les ][pr_de:des ][pr_emoji:💼]"
+  - "[pr_nom:industrie pétrolière][pr_le:l’][pr_de:de l’][pr_emoji:🛢️]"
+  - "[pr_nom:Monsanto][pr_le:][pr_de:de ][pr_emoji:⚗️,🧪]"
+  - "[pr_nom:patronat][pr_le:le ][pr_de:du ][pr_emoji:💼]"
+  - "[pr_nom:patrons][pr_le:les ][pr_de:des ][pr_emoji:💼]"
+  - "[pr_nom:Total][pr_le:][pr_de:de ][pr_emoji:🛢️]"
 
 # Émojis utilisables dans n'importe quel slogan.
 emoji:
