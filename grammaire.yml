@@ -8,7 +8,7 @@ slogan:
   - *slogan1
   - "#[#flatterie#]avance# #[#pa_flatterie#]sub_predateur# #emoji_pa##emoji_pr#"
   - "#[#verbe#]avance# #[#flatterie#]sub_predateur_nv# #emoji_pa##emoji_pr#"
-  - "#[#flatterie#][#pa_flatterie#]avance# #[pa_le:#ve_pa_pron# ][pa_def:]sub_predateur# #emoji_pa##emoji_pr#"
+  - "#[#flatterie#][#pa_flatterie#]avance# #[pa_le:#ve_pa_pron#][pa_def:]sub_predateur# #emoji_pa##emoji_pr#"
 
 # Première partie du slogan, avance sexuelle.
 avance:
