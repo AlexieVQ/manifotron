@@ -93,6 +93,8 @@ verbe:
   - "[ve_inf:spermer][ve_sing:sperme][ve_plur:spermez][ve_de:de ][ve_prep_pa:#pa_prep# ][ve_prep_es:#es_prep# ]"
   - "[ve_inf:tabasser][ve_sing:tabasse][ve_plur:tabassez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
   - "[ve_inf:toucher][ve_sing:touche][ve_plur:touchez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:torturer][ve_sing:torture][ve_plur:torturez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
+  - "[ve_inf:tripoter][ve_sing:tripote][ve_plur:tripotez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
   - "[ve_inf:trouer][ve_sing:troue][ve_plur:trouez][ve_de:de ][ve_prep_pa:][ve_prep_es:]"
   - *lecher
   - *sucer
